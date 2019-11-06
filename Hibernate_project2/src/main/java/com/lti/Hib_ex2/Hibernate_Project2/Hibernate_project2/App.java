@@ -18,13 +18,14 @@ public class App
       stud.setBranch("Manglore");
       stud.setStudName("Divy");
       stud.setBranch("Mang");
-      session.save(stud);
+     
       session.beginTransaction();
-      Object o = session.load(Student.class, 1);
+      /*Object o = session.load(Student.class, 1);
       Student stud1=(Student)o;
       stud1.setStudName("Johnson");
       session.update(stud1);
-      session.save(stud1);
+      session.save(stud1);*/
+      session.save(stud);
       session.getTransaction().commit();
     }
 }
