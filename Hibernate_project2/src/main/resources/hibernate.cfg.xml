@@ -11,7 +11,7 @@
         <property name="connection.pool_size">1</property>
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
         <property name="show_sql">true</property>
-        <mapping resource="com/lti/Hib_ex/Hibernate_Project/Hibernate_Project/hibernate.hbm.xml"/>
+        <mapping resource="hibernate.hbm.xml"/>
         
     </session-factory>
 </hibernate-configuration>
