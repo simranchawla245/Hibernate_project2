@@ -16,6 +16,9 @@ public class App
       Student stud=new Student();
       stud.setStudName("Divyanjalin");
       stud.setBranch("Manglore");
+      stud.setStudName("Divy");
+      stud.setBranch("Mang");
+      session.save(stud);
       session.beginTransaction();
       Object o = session.load(Student.class, 1);
       Student stud1=(Student)o;
